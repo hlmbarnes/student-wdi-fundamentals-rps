@@ -22,13 +22,13 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    if (move === null)
+    if (move === null || move === undefined)
         {return getInput()}
             else {return move}
 }
 
 function getComputerMove(move) {
-    if (move === null)
+    if (move === null || move === undefined)
         {return randomPlay()}
             else {return move}
 }
@@ -71,5 +71,5 @@ function playToFive () {
     return [playerWins, computerWins];
 }
 
-}
+
 
