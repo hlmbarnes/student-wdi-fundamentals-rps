@@ -58,9 +58,9 @@ function playToFive () {
     var playerWins = 0;
     var computerWins = 0;
     while (playerWins <5 && computerWins <5) {
-        playerMove = getPlayerMove ();
-        computerMove = getComputerMove ();
-        winner = getWinner (playerMove, computerMove); 
+        var playerMove = getPlayerMove ();
+        var computerMove = getComputerMove ();
+        var winner = getWinner (playerMove, computerMove); 
         if (winner ==='player') {
         playerWins +=1;
         }
